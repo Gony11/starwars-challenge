@@ -1,0 +1,137 @@
+body {
+    background-color: #060447;
+    color: #FFF38A;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1067px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'text img'
+                        'annee img'
+                        'nav nav';
+    grid-template-columns: 1fr;
+}
+
+.resume {
+    grid-area: text;
+    position: relative;
+}
+
+.resume-content {
+    position: absolute;
+    transition: 250ms;
+}
+
+.picture {
+    grid-area: img;
+}
+
+.year {
+    grid-area: annee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.logo {
+    margin-bottom: 24px;
+    transition: 300ms;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 8px;
+    transition: 300ms;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 30px;
+    transition: 350ms;
+}
+
+.image-carousel {
+    position: relative;
+    display: flex;
+    width: 422px;
+    height: 604px;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    transition: 250ms;
+}
+
+.annee-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.annee {
+    display: flex;
+    column-gap: 15px;
+    position: absolute;
+    transition: 250ms;
+}
+
+.annee img {
+    transition: 300ms;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    padding-top: 89px;
+    column-gap: 100px;
+}
+
+.arrow-container {
+    display: flex;
+    column-gap: 45px;
+    align-items: center;
+}
+
+.left-arrow {
+    transform: rotate(180deg);
+}
+
+.pastille-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+
+.pastille {
+    width: 32px;
+    height: 32px;
+    background-color: #FFF38A;
+    border-radius: 50%;
+    transition: 250ms;
+}
+
+.highlight {
+    height: 1px;
+    flex: 1;
+    background-color: #827B68;
+}
+
+.highlight-progress {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF38A;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 250ms;
+}
